@@ -50,11 +50,11 @@
 - Events can be: Button clicks, Mouse movement, API responses, Timers
 - JS waits for the event and runs code only when it happens. That’s why it’s called `event-driven programming`.
 - Example:
-'''
+```
 button.addEventListener("click", function() {
   console.log("Clicked!");
 });
-'''
+```
 
 ## 6️⃣ Prototype-Based Language
 - JavaScript does not use traditional class-based inheritance (like Java).
