@@ -80,6 +80,7 @@ student.greet();
 
 ## document.body.innerHTML('')
 - it gets or sets the entire HTML content inside the <body> tag of the webpage.
+-----------------------
 **1. When you READ it**
 ```
 console.log(document.body.innerHTML);
