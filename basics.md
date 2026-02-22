@@ -1,20 +1,20 @@
 # 📜 History & Origin of JavaScript
 
-- Created by: 'Brendan Eich`
+- Created by: `Brendan Eich`
 - Year: 1995
-- Company: Netscape
-- Original Name: Mocha → LiveScript → JavaScript
+- Company: `Netscape`
+- Original Name: `Mocha` → `LiveScript` → `JavaScript`
 - Developed in just 10 days for the Netscape browser.
 
-## 👉 Later standardized by ECMA International as ECMAScript (ES).
+> 👉 Later standardized by `ECMA International` as `ECMAScript (ES)`.
 
 # 🚀 Major JavaScript Versions
 
-- ES1 (1997) – First standard
-- ES3 (1999) – Widely supported
-- ES5 (2009) – strict mode, JSON support
-- ES6 / ES2015 – Biggest update -- let, const, Arrow functions ()=>{}, Classes, Modules, Promises
-- ES7–ES13 (2016–2022) – Smaller yearly updates -- async/await, Optional chaining ?., Nullish coalescing ??
+- `ES1` (1997) – First standard
+- `ES3` (1999) – Widely supported
+- `ES5` (2009) – strict mode, JSON support
+- `ES6 / ES2015` – Biggest update -- let, const, Arrow functions ()=>{}, Classes, Modules, Promises
+- `ES7–ES13` (2016–2022) – Smaller yearly updates -- async/await, Optional chaining ?., Nullish coalescing ??
 
 # Properties of Javascript
 
@@ -28,10 +28,10 @@
 ## 2️⃣ Interpreted Language
 - An interpreted language runs code line by line using an engine.
 - JavaScript is executed by engines like:
-  - Chrome → V8 engine
-  - Firefox → SpiderMonkey
+  - Chrome → `V8 engine`
+  - Firefox → `SpiderMonkey`
 - Unlike compiled languages (like C++), JS doesn’t need a separate compilation step before running.
-- ⚠️ Modern JS engines actually compile internally using JIT (Just-In-Time compilation), but for understanding basics, we call it interpreted.
+- ⚠️ Modern JS engines actually compile internally using `JIT (Just-In-Time compilation)`, but for understanding basics, we call it interpreted.
 
 ## 3️⃣ Dynamically Typed
 - In dynamically typed languages, you don’t declare data types explicitly.
@@ -41,9 +41,9 @@
 - JavaScript runs on one main thread.
 - It executes:
   - One task at a time
-  - In a single call stack
+  - In a single `call stack`
 - But then how does it handle multiple tasks?
-  - 👉 With Event Loop & asynchronous behavior.
+  - 👉 With `Event Loop` & `asynchronous behavior`.
 
 ## 5️⃣ Event-Driven
 - JavaScript reacts to events.
@@ -77,3 +77,20 @@ student.greet();
 - This is prototype-based inheritance
 
 > (ES6 introduced class, but internally it still uses prototypes.)
+
+## document.body.innerHTML('')
+- it gets or sets the entire HTML content inside the <body> tag of the webpage.
+**1. When you READ it**
+```
+console.log(document.body.innerHTML);
+``` 
+**2. When you WRITE to it**
+```
+document.body.innerHTML = "<h1>Hi Tanya</h1>";
+```
+- 👉 It replaces everything inside <body> with the new HTML.
+
+### ⚠️ Important Things
+- It removes all existing elements and event listeners inside body.
+- It completely rewrites the DOM inside <body>.
+- Not recommended for large apps (like React), but okay for small demos.
