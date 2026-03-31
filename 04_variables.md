@@ -55,3 +55,31 @@ var a = undefined; // initialized during hoisting
 console.log(a); // undefined
 a = 10;
 ```
+
+## ⚠️ Common Mistake
+```
+let a = 10;
+function test() {
+  console.log(a); // ❌ TDZ (not global a!)
+  let a = 20;
+}
+test()
+```
+-⭐ Inner a shadows outer a
+-⭐ TDZ applies to inner scope
+
+## 🚀 Why TDZ Exists?
+ - The Temporal Dead Zone (TDZ) exists in JavaScript mainly to make variable behavior safer, more predictable, and less error-prone.  
+ - Prevents using variables before declaration  
+ - Encourages clean coding practices  
+ - Avoids silent bugs
+ - Supports block scoping properly  
+ - Improves consistency with modern JS design
+ > prevent bugs like:
+ ```
+ var x = 10;
+function test() {
+  console.log(x); // ❌ unexpected (undefined)
+  var x = 20;
+}
+ ```
