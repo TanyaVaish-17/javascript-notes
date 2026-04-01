@@ -1,7 +1,5 @@
-let a = 10;
+var name = "Alice";
+console.log(window.name); // "Alice"
 
-function test() {
-  console.log(a); // ❌ TDZ (not global a!)
-//   let a = 20;
-}
-test();
+function greet() { return "Hello"; }
+console.log(window.greet()); // "Hello"
